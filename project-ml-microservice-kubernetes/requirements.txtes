@@ -12,4 +12,3 @@ scipy
 six
 Werkzeug
 pylint
-pytest

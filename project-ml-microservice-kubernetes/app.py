@@ -5,10 +5,15 @@ import logging
 import pandas as pd
 import joblib
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import GradientBoostingClassifier
+
 
 app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
+
+
+gb_classifier = GradientBoostingClassifier()
 
 def scale(payload):
     """Scales Payload"""
